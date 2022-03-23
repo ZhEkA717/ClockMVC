@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClockMVC</title>
 </head>
+
 <body>
-    <div style="display: flex; ">
-        <div class="clockDom">
-            <div id="divClock">
-                <input class="start" type="button" value="start">
-                <input class="stop" type="button" value="stop">
-            </div>
+    <style>
+        #clocksBox {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media(max-width:700px) {
+            #clocksBox {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+
+
+    <div id=clocksBox ">
+        <div class=" clockDom">
+        <div id="clock1">
+            <input class="start" type="button" value="start">
+            <input class="stop" type="button" value="stop">
+            <span id="span1"></span>
             <div id="divClock1">
-                <input class="start" type="button" value="start">
-                <input class="stop" type="button" value="stop">
             </div>
-        </div>
-        <div class="clockSvg">
+        </div><br>
+        <div id="clock2">
+            <input class="start" type="button" value="start">
+            <input class="stop" type="button" value="stop">
+            <span id="span2"></span>
             <div id="divClock2">
-                <input class="start" type="button" value="start">
-                <input class="stop" type="button" value="stop">
             </div>
-            <!-- <div id="divClock3">
-                <input class="start" type="button" value="start">
-                <input class="stop" type="button" value="stop">
-            </div> -->
         </div>
-        <!-- <div class="clockCanvas">
-            <div id="divClock4">
-                <input class="start" type="button" value="start">
-                <input class="stop" type="button" value="stop">
-            </div>
-            <div id="divClock5">
-                <input class="start" type="button" value="start">
-                <input class="stop" type="button" value="stop">
-            </div>
-        </div> -->
     </div>
-   
+    <div class="clockSvg">
+        <div id="clock3">
+            <input class="start" type="button" value="start">
+            <input class="stop" type="button" value="stop">
+            <span id="span3"></span><br>
+            <svg id="divClock3" width='200' height='200'></svg>
+        </div>
+        <br>
+        <div id="clock4">
+            <input class="start" type="button" value="start">
+            <input class="stop" type="button" value="stop">
+            <span id="span4"></span><br>
+            <svg id="divClock4" width='200' height='200'></svg>
+        </div>
+    </div>
+  
+        <div>
+            <div id="clock5">
+                <input class="start" type="button" value="start">
+                <input class="stop" type="button" value="stop">
+                <span id="span5"></span><br>
+                <svg id="divClock5" width='200' height='200'></svg>
+            </div><br>
+            <div id="clock6">
+                <input class="start" type="button" value="start">
+                <input class="stop" type="button" value="stop">
+                <span id="span6"></span><br>
+                <svg id="divClock6" width='200' height='200'></svg>
+            </div>
+        </div>
+
+    </div>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
