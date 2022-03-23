@@ -443,11 +443,11 @@ let controller6 = new ClockController();
 let container6 = document.getElementById('divClock6'),
     clocknum6 = document.getElementById("clock6");
 
-clock6.start(view6, countiesGMT.London.GMT);
-view6.start(clock6, container6,countiesGMT.London.label,"span6");
+clock6.start(view6, countiesGMT.Vladivostok.GMT);
+view6.start(clock6, container6,countiesGMT.Vladivostok.label,"span6");
 controller6.start(clock6, clocknum6);
 
-clock6.clockRun(countiesGMT.London.GMT);
+clock6.clockRun(countiesGMT.Vladivostok.GMT);
 clock6.updateView();
 
 
